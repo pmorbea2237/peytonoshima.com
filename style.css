@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+    font-family: 'Barlow', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Home Page Styles */
+.home-page {
+    background-color: rgb(255, 255, 255); /* White Background */
+    color: black; /* Black Text */
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+/* Section Layout */
+.section {
+    background: white;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+}
+
+.section h2 {
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 700;
+}
+
+.section p {
+    font-size: 16px;
+}
+
+/* Seasons Page Styles */
+.seasons-page {
+    background-color: #001b36; /* Navy Blue Background */
+    color: white; /* White Text */
+}
+
+.track-calendar {
+    text-align: center;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: repeat(6, auto); /* 6 rows */
+    gap: 20px; /* Space between items */
+    justify-items: center;
+    align-items: center;
+}
+
+.track-calendar h1 {
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 700;
+    grid-column: 1 / -1; /* Ensures title spans full width */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Track Container */
+.track {
+    background: #0074D9; /* Regular Blue */
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.track-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.track-details {
+    text-align: right;
+}
+
+.track-details h2 {
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+.track-details p {
+    margin: 2px 0;
+}
+
+.track-stats {
+    text-align: left;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: red;
+    padding: 10px 20px;
+    width: auto;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 5px;
+}
+
+.navbar li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+
+.navbar .active {
+    font-weight: 700;
+}
+
+/* Home Button */
+.home-button-1 img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: red;
+    color: black;
+    font-weight: 700;
+}
