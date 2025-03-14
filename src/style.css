@@ -1,0 +1,56 @@
+/* Syncopate Font Styles for Headings */
+.syncopate-bold {
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 700;
+}
+
+.syncopate-regular {
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 400;
+}
+
+/* Barlow Font Styles for Body Text */
+.barlow-medium {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500; /* Medium weight */
+}
+
+/* Navbar Styles */
+.navbar {
+    list-style: none;
+    padding: 10px 20px;
+    background-color: red; /* Red background */
+    display: flex;
+    justify-content: flex-end; /* Aligns items to the right */
+    gap: 20px;
+    font-family: 'Syncopate', sans-serif;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-weight: 400; /* Regular weight for default links */
+    color: black; /* Black text */
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Highlight the active page */
+.navbar a.active {
+    font-weight: 700; /* Bold for active page */
+    color: black; /* Highlight color */
+}
+/* Syncopate Regular for "ABOUT" */
+.syncopate-regular {
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 400; /* Regular */
+}
+
+/* Syncopate Bold for "PEYTON" */
+.syncopate-bold {
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 700; /* Bold */
+}
