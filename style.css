@@ -161,7 +161,7 @@ body {
 
 
 #australia{
-    background-image: url('images/melbourne.png');
+    background-image: url('images/tracks/melbourne.png');
    background-size: contain;
    background-repeat: no-repeat;
    /* background-color: red; */
@@ -169,7 +169,7 @@ body {
 }
 
 #china{
-    background-image: url('images/shanghai.png');
+    background-image: url('images/tracks/shanghai.png');
    background-size: contain;
    background-repeat: no-repeat;
    background-color: red;
@@ -177,7 +177,7 @@ body {
 }
 
 #japan{
-    background-image: url('images/suzuka.png');
+    background-image: url('images/tracks/suzuka.png');
    background-size: contain;
    background-repeat: no-repeat;
    background-color: red;
@@ -185,7 +185,7 @@ body {
 }
 
 #bahrain{
-    background-image: url('images/bahrain.png');
+    background-image: url('images/tracks/bahrain.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-color: red;
@@ -217,3 +217,98 @@ body {
     left: 10vw;
     top: 10vh
 }
+
+.partners-page {
+    padding: 40px 5%;
+    font-family: 'Barlow', sans-serif;
+  }
+  
+  /*Partners page */
+  .partners-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .partners-header h1 {
+    font-size: 2.5rem;
+    color: #000033;
+  }
+  
+  .partners-header .thin {
+    font-weight: 300;
+  }
+  
+  .partners-header .bold {
+    font-weight: 900;
+  }
+  
+  .partner-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid #000066;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000066;
+    font-size: 0.9rem;
+  }
+  
+  .partner-button img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .partner-card {
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .partner-logo {
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+  }
+  
+  .partner-info {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .partner-info h2 {
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  
+  .partner-info p {
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+  
+  .more-info {
+    display: inline-block;
+    background-color: transparent;
+    border: 1.5px solid #ffff00;
+    color: #ffff00;
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+  }
+  
+  .more-info:hover {
+    background-color: #ffff00;
+    color: #000;
+  }
+  
