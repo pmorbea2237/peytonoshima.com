@@ -5,114 +5,6 @@ body {
     padding: 0;
 }
 
-/* Home Page Styles */
-.home-page {
-    background-color: rgb(255, 255, 255); /* White Background */
-    color: black; /* Black Text */
-}
-
-.hero {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.hero h1 {
-    font-family: 'Syncopate', sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-}
-
-.hero p {
-    font-size: 18px;
-    max-width: 600px;
-    margin: 10px auto;
-}
-
-/* Section Layout */
-.section {
-    background: white;
-    margin: 30px auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    text-align: center;
-}
-
-.section h2 {
-    font-family: 'Syncopate', sans-serif;
-    font-weight: 700;
-}
-
-.section p {
-    font-size: 16px;
-}
-
-/* Seasons Page Styles */
-.seasons-page {
-    background-color: #001b36; /* Navy Blue Background */
-    color: white; /* White Text */
-}
-
-.track-calendar {
-    text-align: center;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    grid-template-rows: repeat(6, auto); /* 6 rows */
-    gap: 20px; /* Space between items */
-    justify-items: center;
-    align-items: center;
-}
-
-.track-calendar h1 {
-    font-family: 'Syncopate', sans-serif;
-    font-weight: 700;
-    grid-column: 1 / -1; /* Ensures title spans full width */
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Track Container */
-.track {
-    background: #0074D9; /* Regular Blue */
-    width: 300px;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-}
-
-.track-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-.track-details {
-    text-align: right;
-}
-
-.track-details h2 {
-    font-family: 'Syncopate', sans-serif;
-    font-weight: 400;
-    margin: 0;
-}
-
-.track-details p {
-    margin: 2px 0;
-}
-
-.track-stats {
-    text-align: left;
-    font-size: 14px;
-    margin-top: 10px;
-}
-
 /* Navigation Bar */
 .navbar {
     display: flex;
@@ -139,24 +31,189 @@ body {
     color: black;
 }
 
+/* Home Page Styles */
+.home-page {
+    background-color: rgb(255, 255, 255); /* White Background */
+    color: black; /* Black Text */
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+/* Section Layout */
+.section {
+    background: rgb(0, 2, 95);
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+}
+
+.section h2 {
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 700;
+}
+
+.section p {
+    font-size: 16px;
+}
+
+/* Seasons Page Styles */
+.seasons-page {
+    background-color: #001b36; /* Navy Blue Background */
+    color: rgb(255, 255, 255); /* White Text */
+}
+
+.track-calendar {
+    text-align: center;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: repeat(6, auto); /* 6 rows */
+    gap: 20px; /* Space between items */
+    justify-items: center;
+    align-items: center;
+}
+
+.track-calendar h1 {
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 700;
+    grid-column: 1 / -1; /* Ensures title spans full width */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Track Container */
+.track {
+    background: #003ad9; /* Regular Blue */
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.track-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    color: rgb(255, 255, 255);
+}
+
+.track-details {
+    text-align: right;
+}
+
+.track-details h2 {
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+.track-details p {
+    margin: 2px 0;
+}
+
+.track-stats {
+    text-align: left;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
 .navbar .active {
     font-weight: 700;
 }
 
 /* Home Button */
 .home-button-1 img {
-    width: 50px;
-    height: 50px;
+    width: 140px;
+    height: 140px;
     position: absolute;
     top: 10px;
     left: 10px;
 }
 
-/* Footer */
 .footer {
+    background-color: black;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
+}
+
+
+#australia{
+    background-image: url('images/melbourne.png');
+   background-size: contain;
+   background-repeat: no-repeat;
+   /* background-color: red; */
+
+}
+
+#china{
+    background-image: url('images/shanghai.png');
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-color: red;
+
+}
+
+#japan{
+    background-image: url('images/suzuka.png');
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-color: red;
+
+}
+
+#bahrain{
+    background-image: url('images/bahrain.png');
+    background-size: contain;
+    background-repeat: no-repeat;
     background-color: red;
-    color: black;
-    font-weight: 700;
+
+}
+
+#about_text{
+    background-color: red;
+    width:30vw;
+    position: absolute;
+    right: 5vw;
+    top: 10vh;
+}
+
+#bio{
+    background-color: green;
+    width:30vw;
+    position: absolute;
+    right: 5vw;
+    top: 30vh;
+}
+
+#peytonprofile{
+    background-color: blue;
+
+    background-image: url('images/Background-corgi.png');
+    width: 30vw;
+    position: absolute;
+    left: 10vw;
+    top: 10vh
 }
