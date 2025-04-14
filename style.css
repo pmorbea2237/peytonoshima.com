@@ -1,115 +1,228 @@
-/* General Styles */
+/* ================= GENERAL STYLES ================= */
 body {
-    font-family: 'Barlow', sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Barlow', sans-serif; /* Sets the default font for the site */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
 }
 
-/* Navigation Bar */
+.syncopate-thin {
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 400; /* Light weight for "PEYTON" headings */
+    letter-spacing: 2px; /* Adds spacing between letters */
+}
+
+.syncopate-regular {
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 400; /* Regular weight text */
+}
+
+.syncopate-bold {
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 700; /* Bold weight for emphasis */
+}
+
+.barlow-medium {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500; /* Medium weight for body text */
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+/* ================= NAVIGATION BAR ================= */
 .navbar {
-    display: flex;
-    justify-content: flex-end;
-    background-color: red;
-    padding: 10px 20px;
+    display: flex; /* Makes items appear in a row */
+    justify-content: flex-end; /* Aligns navbar to the right */
+    background-color: red; /* Sets background to red */
+    padding: 10px 20px; /* Adds spacing around links */
     width: auto;
     position: absolute;
     top: 10px;
-    right: 10px;
-    border-radius: 5px;
+    right: 50px; /* Moves nav away from right edge */
+    border-radius: 5px; /* Rounds the edges */
+    z-index: 10; /* Ensures the navbar is above other elements */
 }
 
 .navbar li {
-    list-style: none;
-    margin: 0 10px;
+    list-style: none; /* Removes bullets */
+    margin: 0 10px; /* Spacing between links */
 }
 
 .navbar a {
-    text-decoration: none;
-    font-family: 'Syncopate', sans-serif;
+    text-decoration: none; /* Removes underlines */
+    font-family: 'Syncopate', sans-serif; /* Uses Syncopate font */
     font-size: 16px;
     font-weight: 400;
     color: black;
 }
 
-/* Home Page Styles */
+.navbar .active {
+    font-weight: 700; /* Highlights active page */
+}
+
+
+/* ================= HOME BUTTON ================= */
+.home-button-1 img {
+    width: 225px; /* Sets image width */
+    height: 225px; /* Sets image height */
+    position: absolute; /* Positions relative to page */
+    top: -50px;
+    left: 50px;
+    z-index: 10; /* Ensures the home button is above other elements */
+}
+
+
+/* ================= HOME PAGE ================= */
 .home-page {
-    background-color: rgb(255, 255, 255); /* White Background */
-    color: black; /* Black Text */
+    background-color: rgb(255, 255, 255); /* White background */
+    color: black; /* Black text */
 }
 
-.hero {
-    text-align: center;
-    padding: 50px 20px;
+#about_text {
+    width: 30vw; /* Responsive width */
+    position: absolute;
+    right: 15vw; /* Aligns to the right */
+    top: 10vh; /* Adds vertical spacing */
+    font-size: 50px; /* Large heading size */
+    line-height: 0.5; /* Reduces spacing between ABOUT and PEYTON */
 }
 
-.hero h1 {
+#bio {
+    width: 30vw;
+    position: absolute;
+    right: 15vw;
+    top: 40vh;
+    font-size: 20px; /* Standard paragraph size */
+    line-height: 1.6; /* Comfortable line spacing */
+}
+
+#peytonprofile {
+    width: 40vw; /* Controls image width */
+    position: absolute;
+    left: 10vw;
+    top: 5vh;
+}
+
+#backgroundcorgi {
+    width: 157vw; /* Oversized background element */
+    position: absolute;
+    left: -70vw; /* Centers the image */
+    bottom: -118vh;
+}
+
+/* ================= SPONSOR BAR ================= */
+.sponsor-bar {
+    width: 100%;
+    background-color: #000;
+    padding: 15rem 0;
+    display: flex;                /* Lay items in a row */
+    justify-content: center;     /* Center them horizontally */
+    align-items: none;         /* Align them vertically */
+    gap: 40rem;                   /* Space between logos */
+    margin-top: 94rem;
+    flex-wrap: wrap;             /* Wrap on small screens */
+  }  
+  
+  .sponsor-bar img {
+    height: 70px;          /* ⬆️ Increase the logo height */
+    transform: scale(3.5);   /* Base scale */
+    transition: transform 0.5s ease;
+  }
+  
+  .sponsor-bar img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    cursor: pointer;
+  }
+  
+/* ================= SEASONS PAGE ================= */
+
+
+.banner-container {
+    background-image: url('images/banners/peyton-oshima-seasons-banner.png');
+    background-size: cover; /* Ensures the image covers the container */
+    background-position: top center; /* Positions the image at the top center */
+    overflow: hidden; /* Hides the overflow */
+    height: 700px; /* Adjust this value to crop the bottom of the image */
+    position: relative; /* Ensures the container is the reference for absolute positioning */
+    z-index: 1; /* Ensures the banner is below the navbar and home button */
+  }
+  
+  .season-title {
+    position: absolute;
+    top: 40%; /* Adjust this value to move the text vertically */
+    left: 50px; /* Aligns the text with the home button */
+    transform: translateY(-50%); /* Centers the text vertically */
     font-family: 'Syncopate', sans-serif;
-    font-size: 36px;
     font-weight: 700;
-}
-
-.hero p {
-    font-size: 18px;
-    max-width: 600px;
-    margin: 10px auto;
-}
-
-/* Section Layout */
-.section {
-    background: rgb(0, 2, 95);
-    margin: 30px auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    text-align: center;
-}
-
-.section h2 {
+    font-size: 7rem; /* Adjust the font size as needed */
+    color: white; /* Adjust the text color as needed */
+    text-align: left;
+    z-index: 2; /* Ensures the text is above the banner but below the navbar and home button */
+  }
+  
+  .next-race {
+    position: absolute;
+    top: 60%; /* Adjust this value to move the text vertically */
+    left: 50px; /* Aligns the text with the home button */
+    transform: translateY(-50%); /* Centers the text vertically */
     font-family: 'Syncopate', sans-serif;
-    font-weight: 700;
-}
-
-.section p {
-    font-size: 16px;
-}
-
-/* Seasons Page Styles */
+    font-weight: 400;
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    color: rgb(255, 0, 0); /* Adjust the text color as needed */
+    text-align: left;
+    z-index: 2; /* Ensures the text is above the banner but below the navbar and home button */
+  }
+  
+  .syncopate-thin {
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 400; /* Light weight for "NEXT RACE" */
+  }
+  
+  .syncopate-bold {
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 700; /* Bold weight for "SAUDI ARABIAN GRAND PRIX" */
+  }
+  
 .seasons-page {
-    background-color: #001b36; /* Navy Blue Background */
-    color: rgb(255, 255, 255); /* White Text */
-}
+    background-color: #333333; /* Dark grey background */
+    color: black;
+  }
 
 .track-calendar {
     text-align: center;
     padding: 20px;
-    display: grid;
+    display: grid; /* Uses CSS Grid */
     grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    grid-template-rows: repeat(6, auto); /* 6 rows */
-    gap: 20px; /* Space between items */
-    justify-items: center;
+    grid-template-rows: repeat(6, auto);
+    gap: 20px; /* Spacing between grid items */
+    justify-items: center; /* Centers grid items */
     align-items: center;
 }
 
 .track-calendar h1 {
     font-family: 'Syncopate', sans-serif;
     font-weight: 700;
-    grid-column: 1 / -1; /* Ensures title spans full width */
+    grid-column: 1 / -1; /* Span full width */
     text-align: center;
     margin-bottom: 20px;
 }
 
-/* Track Container */
 .track {
-    background: #003ad9; /* Regular Blue */
-    width: 300px;
-    padding: 15px;
+    background: #003ad9; /* Blue background for track box */
+    width: 350px;
+    height: 500px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
+    color: white;
 }
 
 .track-info {
@@ -117,138 +230,249 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    color: rgb(255, 255, 255);
+    color: white;
 }
 
 .track-details {
-    text-align: right;
+    text-align: right; /* Aligns details to right */
 }
 
-.track-details h2 {
-    font-family: 'Syncopate', sans-serif;
+.country {
+  font-family: 'Syncopate', sans-serif;
+  font-weight: 600; /* or 400 if you want regular weight */
+  font-size: 1.5rem;
+  letter-spacing: 1px; /* optional for style */
+  margin: 0;
+}
+
+
+
+.track-details p,
+.track-stats p {
+    color: #ffff00; /* Ensures white text */
+}
+
+.track-details p{
+    font-family: 'montserrat', sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
-    margin: 0;
-}
-
-.track-details p {
-    margin: 2px 0;
-}
-
-.track-stats {
-    text-align: left;
+    font-weight: bold;
+    text-align: right;
     font-size: 14px;
     margin-top: 10px;
 }
 
-.navbar .active {
-    font-weight: 700;
+.track-stats p{
+    font-family: 'montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-weight: bold;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 10px; 
 }
 
-/* Home Button */
-.home-button-1 img {
-    width: 140px;
-    height: 140px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-
-.footer {
-    background-color: black;
-    text-align: center;
-    padding: 20px 0;
-}
-
-
-#australia{
+/* Background images for specific tracks */
+#australia {
     background-image: url('images/tracks/melbourne.png');
-   background-size: contain;
-   background-repeat: no-repeat;
-   /* background-color: red; */
-
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; /* <--- add this */
 }
 
-#china{
+#china {
     background-image: url('images/tracks/shanghai.png');
-   background-size: contain;
-   background-repeat: no-repeat;
-   background-color: red;
-
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-#japan{
+#japan {
     background-image: url('images/tracks/suzuka.png');
-   background-size: contain;
-   background-repeat: no-repeat;
-   background-color: red;
-
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%; /* adjust scale */
 }
 
-#bahrain{
+#bahrain {
     background-image: url('images/tracks/bahrain.png');
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: red;
-
+    background-position: center;
 }
 
-#about_text{
-    background-color: red;
-    width:30vw;
-    position: absolute;
-    right: 5vw;
-    top: 10vh;
+#Jeddah{
+    background-image: url('images/tracks/jeddah.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-#bio{
-    background-color: green;
-    width:30vw;
-    position: absolute;
-    right: 5vw;
-    top: 30vh;
+#Miami{
+    background-image: url('images/tracks/miami.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;  
 }
 
-#peytonprofile{
-    background-color: blue;
-
-    background-image: url('images/Background-corgi.png');
-    width: 30vw;
-    position: absolute;
-    left: 10vw;
-    top: 10vh
+#Imola{
+    background-image: url('images/tracks/imola.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;    
 }
 
+#Monaco{
+    background-image: url('images/tracks/monaco.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+
+#Barcelona{
+    background-image: url('images/tracks/barcelona.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+#Canada{
+    background-image: url('images/tracks/canada.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+#Austria{
+    background-image: url('images/tracks/spielberg.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+#Silverstone{
+    background-image: url('images/tracks/silverstone.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+#Belgium{
+    background-image: url('images/tracks/belgium.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+#Hungary{
+    background-image: url('images/tracks/hungaroring.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 65%; 
+}
+
+#Zandvoort{
+    background-image: url('images/tracks/zandvoort.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+
+#Monza{
+    background-image: url('images/tracks/monza.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+#Azerbaijan{
+    background-image: url('images/tracks/azerbaijan.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+#Singapore{
+    background-image: url('images/tracks/singapore.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+#Austin{
+    background-image: url('images/tracks/austin.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;  
+}
+
+#Mexico{
+    background-image: url('images/tracks/mexico.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+#Brazil{
+    background-image: url('images/tracks/interlagos.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 140%;  
+}
+
+#Vegas{
+    background-image: url('images/tracks/vegas.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+#Qatar{
+    background-image: url('images/tracks/qatar.png');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+#Abu-dhabi{
+    background-image: url('images/tracks/abu-dhabi.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+/* ================= PARTNERS PAGE ================= */
 .partners-page {
-    padding: 40px 5%;
+    padding: 40px 5%; /* Section spacing */
     font-family: 'Barlow', sans-serif;
-  }
-  
-  /*Partners page */
-  .partners-header {
+}
+
+.partners-header {
+    margin-top: 140px; /* push content down */
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 40px;
-  }
-  
-  .partners-header h1 {
-    font-size: 2.5rem;
+  }  
+
+.partners-header h1 {
+    font-size: 2.5rem; /* Large heading */
     color: #000033;
-  }
-  
-  .partners-header .thin {
+}
+
+.partners-header .thin {
     font-weight: 300;
-  }
-  
-  .partners-header .bold {
+}
+
+.partners-header .bold {
     font-weight: 900;
-  }
-  
-  .partner-button {
+}
+
+.partner-button {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     border: 2px solid #000066;
     padding: 10px 20px;
     border-radius: 30px;
@@ -256,14 +480,14 @@ body {
     font-weight: bold;
     color: #000066;
     font-size: 0.9rem;
-  }
-  
-  .partner-button img {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .partner-card {
+}
+
+.partner-button img {
+    width: 25px;
+    height: 25px;
+}
+
+.partner-card {
     display: flex;
     background-color: #000;
     color: #fff;
@@ -271,31 +495,31 @@ body {
     overflow: hidden;
     margin-bottom: 20px;
     flex-wrap: wrap;
-  }
-  
-  .partner-logo {
+}
+
+.partner-logo {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     object-fit: cover;
-  }
-  
-  .partner-info {
+}
+
+.partner-info {
     flex: 1;
     padding: 20px;
-  }
-  
-  .partner-info h2 {
+}
+
+.partner-info h2 {
     font-weight: 900;
     letter-spacing: 1px;
     margin-bottom: 10px;
-  }
-  
-  .partner-info p {
+}
+
+.partner-info p {
     font-weight: 300;
     margin-bottom: 15px;
-  }
-  
-  .more-info {
+}
+
+.more-info {
     display: inline-block;
     background-color: transparent;
     border: 1.5px solid #ffff00;
@@ -305,10 +529,9 @@ body {
     font-weight: bold;
     text-decoration: none;
     transition: background 0.2s, color 0.2s;
-  }
-  
-  .more-info:hover {
+}
+
+.more-info:hover {
     background-color: #ffff00;
     color: #000;
-  }
-  
+}
