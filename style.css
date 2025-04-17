@@ -118,12 +118,12 @@ body {
 .sponsor-bar {
     width: 100%;
     background-color: #000;
-    padding: 15rem 0;
+    padding: 10rem 0;
     display: flex;                /* Lay items in a row */
     justify-content: center;     /* Center them horizontally */
     align-items: none;         /* Align them vertically */
     gap: 40rem;                   /* Space between logos */
-    margin-top: 94rem;
+    margin-top: 120rem;
     flex-wrap: wrap;             /* Wrap on small screens */
   }  
   
@@ -134,13 +134,22 @@ body {
   }
   
   .sponsor-bar img:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
+    transform: scale(2.5); /* Slight zoom on hover */
     cursor: pointer;
   }
   
 /* ================= SEASONS PAGE ================= */
 
+.seasons-page .navbar {
+    background-color: red;
+}
 
+/* Seasons Page Background */
+body.seasons-page {
+    background-color: #001353 !important; /* Navy blue override */
+    color: white;
+  }
+  
 .banner-container {
     background-image: url('images/banners/peyton-oshima-seasons-banner.png');
     background-size: cover; /* Ensures the image covers the container */
@@ -274,168 +283,168 @@ body {
 
 /* Background images for specific tracks */
 #australia {
-    background-image: url('images/tracks/melbourne.png');
+    background-image: url('images/tracks/tracks-white/melbourne.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; /* <--- add this */
 }
 
 #china {
-    background-image: url('images/tracks/shanghai.png');
+    background-image: url('images/tracks/tracks-white/shanghai.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #japan {
-    background-image: url('images/tracks/suzuka.png');
+    background-image: url('images/tracks/tracks-white/suzuka.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 60%; /* adjust scale */
 }
 
 #bahrain {
-    background-image: url('images/tracks/bahrain.png');
+    background-image: url('images/tracks/tracks-white/bahrain.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #Jeddah{
-    background-image: url('images/tracks/jeddah.png');
+    background-image: url('images/tracks/tracks-white/jeddah.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #Miami{
-    background-image: url('images/tracks/miami.png');
+    background-image: url('images/tracks/tracks-white/miami.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;  
 }
 
 #Imola{
-    background-image: url('images/tracks/imola.png');
+    background-image: url('images/tracks/tracks-white/imola.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;    
 }
 
 #Monaco{
-    background-image: url('images/tracks/monaco.png');
+    background-image: url('images/tracks/tracks-white/monaco.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 80%;
 }
 
 #Barcelona{
-    background-image: url('images/tracks/barcelona.png');
+    background-image: url('images/tracks/tracks-white/barcelona.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;  
 }
 
 #Canada{
-    background-image: url('images/tracks/canada.png');
+    background-image: url('images/tracks/tracks-white/canada.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;  
 }
 
 #Austria{
-    background-image: url('images/tracks/spielberg.png');
+    background-image: url('images/tracks/tracks-white/spielberg.png');
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;  
 }
 
 #Silverstone{
-    background-image: url('images/tracks/silverstone.png');
+    background-image: url('images/tracks/tracks-white/silverstone.png');
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;  
 }
 
 #Belgium{
-    background-image: url('images/tracks/belgium.png');
+    background-image: url('images/tracks/tracks-white/belgium.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;  
 }
 
 #Hungary{
-    background-image: url('images/tracks/hungaroring.png');
+    background-image: url('images/tracks/tracks-white/hungaroring.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 65%; 
 }
 
 #Zandvoort{
-    background-image: url('images/tracks/zandvoort.png');
+    background-image: url('images/tracks/tracks-white/zandvoort.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70%;
 }
 
 #Monza{
-    background-image: url('images/tracks/monza.png');
+    background-image: url('images/tracks/tracks-white/monza.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;  
 }
 
 #Azerbaijan{
-    background-image: url('images/tracks/azerbaijan.png');
+    background-image: url('images/tracks/tracks-white/azerbaijan.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;  
 }
 
 #Singapore{
-    background-image: url('images/tracks/singapore.png');
+    background-image: url('images/tracks/tracks-white/singapore.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;  
 }
 
 #Austin{
-    background-image: url('images/tracks/austin.png');
+    background-image: url('images/tracks/tracks-white/austin.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 75%;  
 }
 
 #Mexico{
-    background-image: url('images/tracks/mexico.png');
+    background-image: url('images/tracks/tracks-white/mexico.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;  
 }
 
 #Brazil{
-    background-image: url('images/tracks/interlagos.png');
+    background-image: url('images/tracks/tracks-white/interlagos.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 140%;  
+    background-size: 90%;  
 }
 
 #Vegas{
-    background-image: url('images/tracks/vegas.png');
+    background-image: url('images/tracks/tracks-white/vegas.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;  
 }
 
 #Qatar{
-    background-image: url('images/tracks/qatar.png');
+    background-image: url('images/tracks/tracks-white/qatar.png');
     background-size: 90%;
     background-repeat: no-repeat;
     background-position: center;  
 }
 
 #Abu-dhabi{
-    background-image: url('images/tracks/abu-dhabi.png');
+    background-image: url('images/tracks/tracks-white/abu-dhabi.png');
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;  
@@ -448,7 +457,7 @@ body {
 }
 
 .partners-header {
-    margin-top: 140px; /* push content down */
+    margin-top: 110px; /* push content down */
     display: flex;
     justify-content: space-between;
     align-items: center;
